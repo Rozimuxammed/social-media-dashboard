@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    width: 100%;
+    height: 230px;
+    background-color: #20222F;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-text h1 {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+header nav .nav-text p {
+    color: #8C98C6;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+header nav .nav-toogle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav .nav-toogle p {
+    color: #8C98C6;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+header nav .nav-toogle .nav-toogle-btn {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    background: linear-gradient(#40DB82, #388FE7);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+header nav .nav-toogle .nav-toogle-btn span {
+    position: absolute;
+    left: 8%;
+    top: 13%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #252B42;
+    transition: all 0.3s ease;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card {
+    width: 255px;
+    height: 216px;
+    background-color: #252B42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    border-top: 4px solid #178FF5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.card:hover {
+    background-color: #333A55;
+}
+
+.card:nth-child(2) {
+    border-top: 4px solid #1DA1F2;
+}
+
+.card:nth-child(3) {
+    border-top: 4px solid #EE877E;
+}
+
+.card:nth-child(4) {
+    border-top: 4px solid #C4032B;
+}
+
+.card:nth-child(4) .card-today p {
+    color: #DC414C;
+}
+
+
+.card .card-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card .card-info p {
+    color: #8C98C6;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.card .card-follow {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card .card-follow h1 {
+    font-size: 58px;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.card .card-follow p {
+    color: #8C98C6;
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.card .card-today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card .card-today p {
+    color: #1EB589;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1d1f29;
+    position: relative;
+    top: -20px;
+    transition: all 0.3s ease;
+    padding: 150px 0;
+}
+
+main .container .logo-text {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+main .container .blogs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+main .container .blogs .card {
+    width: 255px;
+    height: 125px;
+    background-color: #252B42;
+    border-top: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding: 20px 0 ;
+}
+main .container .blogs .card:hover{
+    background-color: #333A55;
+}
+main .container .blogs .card .card-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+main .container .blogs .card .card-info p{
+    font-size: 14px;
+    font-weight: 700;
+}
+main .container .blogs .card .card-follow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+main .container .blogs .card .card-follow span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+main .container .blogs .card .card-follow .logo-text{
+    font-size: 32px;
+}
+main .container .blogs .card .card-follow span p{
+    font-size: 12px;
+    color: #1EB589;
+    letter-spacing: 0.3px;
+}
+main .container .blogs .card .card-follow span .title{
+    color: #DC414C;
+}
